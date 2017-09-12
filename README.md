@@ -1,6 +1,6 @@
-# music
+# 我常用的vue模板
 
-> A Vue.js project
+> 每次拉完vue-cli都要对router和vuex等做一些配置，所以我把配置好的模板保存，以后建项目方便使用
 
 ## Build Setup
 
