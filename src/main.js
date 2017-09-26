@@ -13,7 +13,7 @@ import { baseUrl } from "./config/env";
 Vue.use(Mint);
 Vue.config.productionTip = false;
 
-// Vue.component("my-com",require('./xx.vue').default)
+Vue.component("scroll",require('./components/common/scroll.vue').default)
 /*请求拦截器*/
 Vue.http.interceptors.push(function(request, next) {
   // modify headers
