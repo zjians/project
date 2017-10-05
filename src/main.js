@@ -3,14 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Mint from 'mint-ui';
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
 import Vuex from 'vuex'
 import store from './store/'
 import BScroll from 'better-scroll'
 import VueResource from "vue-resource";
 Vue.use(VueResource);
 import { baseUrl } from "./config/env";
-Vue.use(Mint);
+Vue.use(MintUI)
 Vue.config.productionTip = false;
 
 Vue.component("scroll",require('./components/common/scroll.vue').default)
@@ -19,7 +20,6 @@ Vue.http.interceptors.push(function(request, next) {
   // modify headers
   // request.headers.set("Authorization", "Bearer TOKEN");
   request.url = baseUrl + request.url;
-  console.dir(request);
   // continue to next interceptor
   next(response => {
     if (response.status == "401") {

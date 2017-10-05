@@ -1,12 +1,13 @@
 <template>
   <div class="layout">
-  layout
+    <button @click="handleToast">click me</button>
   </div>
 </template>
 
 <script>
   import { mapState } from "vuex"
   import BScroll from 'better-scroll'
+  import { Toast } from 'mint-ui'
   export default {
     name: 'Layout',
     data () {
@@ -20,13 +21,22 @@
       ])
     },
     beforeCreate () {
-      this.$http.get('/banner').then(res => {
-        this.bans = res.data.banners;
+      // this.$http.get('/banner').then(res => {
+      //   this.bans = res.data.banners;
+      // }
+      // ).catch(err => {
+      //   console.dir(err)
+      // }
+      //   );
+    },
+    methods: {
+      handleToast () {
+        Toast({
+          message: '操作button',
+          position: 'top',
+          duration: 2000
+        })
       }
-      ).catch(err => {
-        console.dir(err)
-      }
-        );
     },
     mounted () {
 
