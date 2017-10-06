@@ -5,9 +5,9 @@ module.exports = {
   build: {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../dist'), /*可配置打包到platform的www文件夹*/
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '',   /*这默认是 / 是指必须是跟目录，这样会使打包后的dist中的文件找不到对应的js文件，必须开一个服务器根目录，所以删了 */
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
