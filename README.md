@@ -1,11 +1,17 @@
 # 更新至 vue-cli-2.9.1
 
-> 设置了vuex,axios,baseUrl,[vuex-router-sync](https://github.com/vuejs/vuex-router-sync),[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate)等基础配置
+> 设置了vuex(2.5.0),[axios](https://github.com/axios/axios),baseUrl,[vuex-router-sync](https://github.com/vuejs/vuex-router-sync),[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate)等基础配置
 
-> src下的store对应为vuex
-> config下的env是区分开发和上线环境的baseurl
-> assets下的less里面为一些基础样式变量设置(已配置less)
-> 默认是开启eslint
+## 说明
+``` bash
+# src下的store对应为vuex
+
+# config下的env是区分开发和上线环境的baseurl
+
+# assets下的less里面为一些基础样式变量设置(已配置less)
+
+# 默认是开启eslint
+```
 
 ## Build Setup
 
