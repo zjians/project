@@ -1,6 +1,6 @@
-# vue-cli-2.9.1
+# c2b-pc
 
-> 已经配置了less和vuex等基础配置
+> A Vue.js project
 
 ## Build Setup
 
