@@ -1,1 +1,0 @@
-// export const RECORD_MENU_DATA = 'RECORD_MENU_DATA'
