@@ -6,6 +6,8 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import baseUrl from './config/env'
+import { sync } from 'vuex-router-sync'
+sync(store, router)
 /* 配置axios */
 Vue.prototype.$http = axios
 axios.defaults.baseURL = baseUrl
