@@ -1,5 +1,5 @@
 {
-  "name": "c2b-pc",
+  "name": "vue-cli",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "zhoujian <758507292@qq.com>",
@@ -14,8 +14,8 @@
     "axios": "^0.18.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vuex": "^2.5.0",
-    "vuex-persistedstate": "^2.5.1",
+    "vuex": "^3.0.0",
+    "vuex-persistedstate": "^2.5.4",
     "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
